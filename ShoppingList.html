@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ShoppingList.css" />
+  </head>
+  <body>
+    <header>Shopping List</header>
+
+    <main>
+      <div class="input-container">
+        <span class="add">Add Item :</span>
+        <input
+          type="text"
+          placeholder="Add item..."
+          id="input-item"
+          class="input-item"
+        />
+        <button class="need-btn" id="need-btn">Need</button>
+        <button class="have-btn" id="have-btn">Have</button>
+      </div>
+      <section class="needItem">
+        <span> Need :</span>
+        <ul class="need-container" id="need-container">
+          <li class="item-list">
+            <div>Milk</div>
+          <div onclick="removeItem(event)" >
+            <i class="fa fa-xmark"></i>
+          </div>
+          </li>
+          <li class="item-list">
+            <div>Eggs</div>
+            <div onclick="removeItem(event)" >
+              <i class="fa fa-xmark"></i>
+            </div>   
+          </li>
+          <li class="item-list">
+            <div>Kitten Food</div>
+            <div onclick="removeItem(event)" >
+              <i class="fa fa-xmark"></i>
+            </div>
+          </li>
+          <li class="item-list">
+             <div>Bacon</div>
+            <div onclick="removeItem(event)" >
+              <i class="fa fa-xmark"></i>
+            </div></li>
+        </ul>
+      </section>
+
+      <section class="haveItem">
+        <span> Have:</span>
+        <ul class="have-container" id="have-container" >
+          <li class="item-list1">
+            <div>Steak</div>
+            <div onclick="removeItem(event)" >
+              <i class="fa fa-xmark"></i>
+            </div>
+          </li>
+          <li class="item-list1">
+            <div>Cream</div>
+            <div onclick="removeItem(event)" >
+              <i class="fa fa-xmark"></i>
+            </div>
+          </li>
+          <li class="item-list1">
+            <div>Cheese</div>
+            <div onclick="removeItem(event)" >
+              <i class="fa fa-xmark"></i>
+            </div>
+          </li>
+          <li class="item-list1">
+            <div>Veggies</div>
+            <div onclick="removeItem(event)" >
+              <i class="fa fa-xmark"></i>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="ShoppingList.js"></script>
+  </body>
+</html>
